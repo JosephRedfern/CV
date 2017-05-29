@@ -1,0 +1,131 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{oldstyle}                           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Joseph}{Redfern}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{5 Clarence Place}{Cardiff Bay, Cardiff}{CF10 5GW}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+44~7598~336097}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{joseph@redfern.me}                               % optional, remove / comment the line if not wanted
+\homepage{https://redfern.me/}      
+\extrainfo{\textbf{github} \href{https://github.com/josephredfern}{josephredfern}}
+% optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2015--2019}{PhD Computer Science}{Cardiff University}{}{Ongoing}{
+\textbf{Working Thesis Title:} ``Prediction of areas of alcohol-related violence using open data and agent-based modelling''
+}
+
+\cventry{2011--2015}{BSc Computer Science}{Cardiff University}{}{\textit{1\textsuperscript{st}}}{
+\textbf{BSc Dissertation:} \href{https://redfern.me/public/research/sonification-research.pdf}{``Video to Audio Conversion for the Visually Impaired''}
+\newline
+\textbf{Final Year Modules:}
+\begin{itemize}
+\item Multimedia
+\item Graphics, Visualisation and Computer Vision
+\item Security and Forensics
+\item Emerging Technologies
+\end{itemize}}
+
+\cventry{2009--2011}{A-Levels}{St Gerards School}{}{}{Maths, Further Maths, Physics \& Chemistry}
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{Feb 2017 -- Ongoing}{Technical Director (part-time)}{\newline Paperclip App Ltd.}{Cardiff}{}{My role changed from CTO to Technical Director due to PhD commitments and the expansion of the company -- CTO became a full-time position. As Technical Director, I provide guidance on technical architecture, perform system administration duties and develop our internal dashboards and CRM tools.}
+
+\cventry{Aug 2015 -- Feb 2017}{CTO (part-time)}{\newline Paperclip App Ltd.}{Cardiff}{}{In this role, I helped manage the outsourced development of Paperclip's mobile apps, performed system-administration roles, and developed internal dashboards to help analyse customer behaviour.}
+
+\cventry{Jun 2015 -- Sept 2015}{Software Engineering Intern}{\newline Anchor Computer Systems Ltd.}{Bangor}{}{Development of a new mobile app, replacing an existing legacy system. Mainly worked in Xamarin Forms (with some native code on the side), primarily targeting Android.}
+
+\cventry{Jul 2013 -- Sept 2014}{Software Engineering Intern}{\newline MWR InfoSecurity}{Basingstoke}{}{Involved in several security-related development projects, including the design and implementation of a decompiler in Java, the development of an open-source mobile security assessment tool (\href{https://github.com/mwrlabs/drozer}{drozer}) using Python, and work involving C\#, MVC4 and SQL Server. Worked in an Agile environment, with two week sprints and daily stand-ups.}
+
+\cventry{Dec 2012 -- Apr 2013}{Software Developer}{\newline Sphericore Ltd}{Cardiff}{}{Development of a prototype geospatial intelligence gathering platform in Javascript,
+Drupal (PHP) and PostgreSQL}
+
+\cventry{Jun 2012 -- Sept 2012}{Software Engineering Intern}{\newline GE Aviation}{Cheltenham}{}{Work involved debugging embedded flight software, authoring and updating technical documentation for various aircraft software components, and working with local schools to promote STEM.}
+
+\section{Languages}
+\cvitemwithcomment{English}{Native Speaker}{}
+\cvitemwithcomment{Welsh}{Good}{}
+
+\section{Computer skills}
+\cvitem{Python}{Good knowledge, experience with Flask, Django \& Celery}
+\cvitem{C\# }{Good knowledge, including Xamarin, NHibernate and MVC 4.0}
+\cvitem{Java}{Good knowledge}
+\cvitem{PHP}{Working knowledge of OO PHP, including the Laravel Framework}
+\cvitem{Matlab}{Working knowledge of Matlab, including MEX}
+\cvitem{C/C++}{Basic working knowledge of C/C++}
+\cvitem{Android}{Experience working in multiple Android projects, good knowledge of Android security}
+\cvitem{PostgreSQL}{Experience designing and maintaining multiple PostgreSQL Databases}
+\cvitem{Linux}{Experience running, tuning and securing multiple Linux-based servers, using nginx, php-fpm, iptables, fail2ban and OpenVZ}
+\cvitem{Windows Server}{Experience running AD Environments, including implementation of group policies, automated provisioning with WDS and Hyper-V}
+
+\section{Teaching}
+\cventry{2015/16 \& 2016/17}{Lab Tutor}{Cardiff University}{CMT303}{Software Engineering (Masters)}{}{}
+
+\cventry{2015/16 \& 2016/17}{Lab Tutor}{Cardiff University}{CMT205}{Object-Oriented Development with Java (Masters)}{}{}
+
+\cventry{2016/17}{Lab Tutor}{Cardiff University}{CM1103}{Problem Solving with Python (Undergraduate)}{}{}
+
+\cventry{2016/17}{Lab Tutor}{Cardiff University}{CMT103}{Information Processing in Python (Masters)}{}{}
+
+\cventry{2015/16}{Lab Tutor}{Cardiff University}{CMT302}{E-Commerce and Innovation (Masters)}{}{}
+
+\cventry{2015/16}{Lab Tutor}{Cardiff University}{CM3106}{Multimedia (Undergraduate)}{}{}
+
+\cventry{2015/16}{Lab Tutor}{Cardiff University}{CM3113}{Computer Vision (Undergraduate)}{}{}
+
+\cventry{2015/16}{Supervisor}{Cardiff University}{CM2305}{Group Project (Undergraduate)}{}{}
+
+\section{Other}
+\cvlistitem{Organiser of ``Open Sauce Hackathon'' 2012, 2013, 2015 \& 2016}
+\cvlistitem{Listed on Android Security Acknowledgements page for discovering a Nexus 5 DoS vulnerability: \url{https://source.android.com/security/overview/acknowledgements#2014}}
+\cvlistitem{Listed on eBay Responsible Disclosure Acknowledgement Page for discovering an eBay XSS Vulnerability: \url{http://pages.ebay.com/securitycenter/ResearchersAcknowledgement.html}}
+\cvlistitem{Credited for having discovered information disclosure vulnerability on H3G Website: \url{http://www.theregister.co.uk/2015/06/17/three_strikes_out_sloppy_survey_after_britprivate/}}
+\cvlistitem{Full UK Driving License}
+
+\end{document}
